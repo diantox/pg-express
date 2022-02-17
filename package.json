@@ -1,0 +1,14 @@
+{
+  "name": "pg-express",
+  "version": "0.0.0",
+  "author": "Miras Absar <miras@miras.io>",
+  "scripts": {
+    "knex:migrate:rollback": "knex --knexfile ./knex/configs/knex.js migrate:rollback --all",
+    "knex:migrate:latest": "knex --knexfile ./knex/configs/knex.js migrate:latest",
+    "knex:seed:run": "knex --knexfile ./knex/configs/knex.js seed:run"
+  },
+  "dependencies": {
+    "knex": "~1.0.0",
+    "pg": "~8.7.0"
+  }
+}
